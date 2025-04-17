@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agastya Pandey - Portfolio</title>
+    <style>
+        :root {
+            --primary: #f9f9fb;
+            --accent: #4a90e2;
+            --accent-dark: #2c3e50;
+            --text-dark: #34495e;
+            --text-light: #7f8c8d;
+            --box-bg: #ffffff;
+            --border: #dcdfe3;
+            --line-color: #e1e4e8;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary);
+            color: var(--text-dark);
+        }
+
+        header {
+            background-color: var(--accent);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-bottom: 2px solid var(--line-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .highlight {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background-color: white;
+            padding: 1rem;
+            border-bottom: 2px solid var(--line-color);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: var(--accent-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: var(--accent-dark);
+            border-bottom: 2px solid var(--line-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .box-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--box-bg);
+            border: 1px solid var(--border);
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+            transition: box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--accent);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 18px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            color: var(--text-light);
+            padding: 1rem;
+            font-size: 0.9rem;
+            border-top: 2px solid var(--line-color);
+        }
+
+        @media (max-width: 768px) {
+            .box-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agastya Bhaskar Dev Pandey</h1>
+        <p class="highlight">Student | IIM Bangalore | BBA DBE</p>
+    </header>
+
+    <nav>
+        <a href="http://127.0.0.1:5500/index.html#about">About</a>
+        <a href="http://127.0.0.1:5500/index.html#education">Education</a>
+        <a href="http://127.0.0.1:5500/index.html#resume">Resume</a>
+        <a href="http://127.0.0.1:5500/index.html#contact" style="text-decoration: none;">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="box-container">
+            <div class="card">
+                <p>I’m Agastya Bhaskar Dev Pandey from Bhopal, Madhya Pradesh. Currently enrolled in the BBA (DBE) program at IIM Bangalore. I'm also preparing for NEET 2025, focusing on Physics.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="box-container">
+            <div class="card">
+                <p><strong>Institution:</strong> Indian Institute of Management Bangalore</p>
+                <p><strong>Program:</strong> BBA in Digital Business &amp; Economics</p>
+                <p><strong>Roll No.:</strong> 24120090</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="box-container">
+            <div class="card">
+                <ul>
+                    <li>Team Leader Interview Candidate at YOUNITY</li>
+                    <li>Former Inside Sales Executive Interviewee at VelocityOS Pvt. Ltd.</li>
+                    <li>Representing Madhya Pradesh in IIM Bangalore Events (Silver Eagles)</li>
+                    <li>Completed modules in Microeconomics, Statistics for Management, and Persuasive Communication</li>
+                    <li>Working on a double-flow rap anthem for the Silver Eagles</li>
+                    <li>NEET 2025 Aspirant – focused prep in Chemistry &amp; Physics</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="box-container">
+            <div class="card">
+                <p><strong>Email:</strong> agastya@example.com</p>
+                <p><strong>Location:</strong> Bhopal, Madhya Pradesh, India</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Agastya Pandey. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.textDecoration = 'underline';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.textDecoration = 'none';
+            });
+        });
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
